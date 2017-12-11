@@ -48,3 +48,17 @@ $output='';
 for ($i=1;$i<11;$i++){
   $output .= ($i<10) ? $i.'-' : $i;
 }
+-------------------------------------------------------------------------------------
+ //measure time
+ $x =  microtime();
+
+//breakpoint into a script
+die(); 
+exit();
+
+//include php script from different files acts like a bassic copy/paste at the respective line
+include('script.php');
+
+
+//verify if $var is number  equivalent to variable.isalpha() from python
+if(is_numeric($var) && is_numeric($var2));
