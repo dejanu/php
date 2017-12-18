@@ -73,3 +73,9 @@ function summ ($x,$y){
    $suma = $x + $y + $z;
    return $suma;
 }
+
+//by reference modifica variabila pe care o promeste ca parametru
+ksort( array &$array); //passed by reference in definition
+ksort(&produse); //call the function by reference 
+//by value trebuie assignata
+$x = count($produse)
