@@ -62,3 +62,14 @@ include('script.php');
 
 //verify if $var is number  equivalent to variable.isalpha() from python
 if(is_numeric($var) && is_numeric($var2));
+-------------------------------------------------------------------------------------------
+ //global scope
+ //by default the functions do not see in global scope, in order to modify and access global vars use global $var_name keyword
+ 
+ $z=10;
+function summ ($x,$y){
+ 
+   global $z;
+   $suma = $x + $y + $z;
+   return $suma;
+}
