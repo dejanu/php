@@ -79,3 +79,30 @@ ksort( array &$array); //passed by reference in definition
 ksort(&produse); //call the function by reference 
 //by value trebuie assignata
 $x = count($produse)
+ -------------------------------------------------------------------------------------------
+ //delete element from array
+ unset($array_name["key"]);
+
+//check if key is in array
+isset($array_name['key_name'];
+      
+//look for value and then return the key name
+ if (in_array('valoare 1',$test)){
+	$cheie = array_search('valoare_1',$test);
+		echo "key for value 1 is : ".$cheie;
+	}	
+
+      
+//explode equivalent to .split() -> converts a string to array + reading from csv
+ $continut_fisier = file_get_contents('test.csv');
+//var_dump($continut_fisier);
+
+$row_array = explode("\n", $continut_fisier);
+//var_dump($row_array);
+
+$words = explode ("|",$continut_fisier);
+//var_dump($words);
+      
+      
+  
+      
