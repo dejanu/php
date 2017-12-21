@@ -21,7 +21,9 @@ $modules = array("os" => array("path" => 1,
 //       }
 // }
 
-
-
+//read from csv
+$file_content = file_get_contents('answers.csv');
+$row_array = explode("\r\n",$file_content);
+var_dump($row_array);
 
  ?>
