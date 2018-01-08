@@ -57,3 +57,36 @@ $new_string = str_ireplace(
 var_dump($new_string);
 
 ?>
+
+////another file
+
+function conversion(array $p,$currency){
+				//verify is array
+				if (!is_array($p)){
+					return "Err argument not array";
+				} else {
+					
+				//access global var
+				global $curs_valutar;
+				
+				//verify if $currency in array
+				if (!isset($curs_valutar[$currency])){
+						return "Currency NA";
+				}
+				
+				else {
+					
+					$curs = $curs_valutar[$currency];
+				}
+				
+				$output="";
+				
+							
+				foreach ($p as $k => $v) {
+					$nv = round($v/$curs,2);
+					//concatenate
+					$output.="<li>".$k.": ".(string)($nv).$currency."</li>";
+					}
+				return $output;
+				}
+	}
